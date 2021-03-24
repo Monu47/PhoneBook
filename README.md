@@ -1,10 +1,12 @@
 # PhoneBook
 -Create a website that will store contact details
 
-1) Clone git repository using-
-  "https://github.com/Monu47/PhoneBook.git"
+1) Navigate to /var/www/html directory
 
-2) Copy folder "public" and file "config.php" and paste in /var/www/html/ directory
+2) Clone git repository in html directory using-
+  git clone https://github.com/Monu47/PhoneBook.git
+  If permission denied-
+  sudo git clone https://github.com/Monu47/PhoneBook.git
 
 # Creating Database
 - There is a file "config.php" which contains username, password, servername, database name and dsn.
@@ -12,9 +14,11 @@
   After this,
   IN "public" Folder there is a file "install.php" which create Database "contact" and table "users" in it.
   To perform this, Go to following url-
-    "http://localhost/install.php"
+    "http://localhost/PhoneBook/public/install.php"
   Database will be created if everything went alright.
   
  # Running Website
  - Go to following url and explore website-
-   "http://localhost/create.php"
+   "http://localhost/PhoneBook/public/create.php"
+   
+
