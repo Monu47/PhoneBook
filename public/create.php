@@ -3,12 +3,6 @@
 require "common.php";
 require "../config.php";
 try {
-  $servername = "localhost";
-            $username = "roots";
-            $password = "Root1234@";
-            $dbname     = "contact"; 
-            $dsn        = "mysql:host=$servername;dbname=$dbname";
-
   $connection = new PDO($dsn, $username, $password);
   $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $sqlm = "SELECT * FROM users";
@@ -24,11 +18,6 @@ try {
 ?>
 
 <?php if (isset($_POST['submit'])) {
-  $servername = "localhost";
-  $username = "roots";
-  $password = "Root1234@";
-  $dbname     = "contact"; 
-  $dsn        = "mysql:host=$servername;dbname=$dbname";
   try {
     $conn = new PDO($dsn, $username, $password);
    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
