@@ -1,12 +1,7 @@
 
 
 <?php
-
-$servername = "localhost";
-$username = "roots";
-$password = "Root1234@";
-$dbname     = "contact"; // will use later
-
+require "../config.php";
 
 try {
     $conn = new PDO("mysql:host=$servername;", $username, $password);
