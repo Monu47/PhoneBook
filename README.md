@@ -5,7 +5,7 @@
 
 2) Clone git repository in html directory using-
    git clone https://github.com/Monu47/PhoneBook.git
-  - If permission denied-
+  - If permission denied, use-
    sudo git clone https://github.com/Monu47/PhoneBook.git
 
 # Creating Database
